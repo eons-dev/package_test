@@ -2,18 +2,15 @@
   "next": [
     {
       "run_when_any" : [
+        "push",
+        "pull_request",
         "release"
       ],
-      "build" : "publish",
-      "build_in" : "package_test",
-      "copy" : [
-        {"../../../inc/test.py" : "package_test/test.py"}
-      ],
+      "build" : "proxy",
+      "build_in" : "local",
       "config" : {
-        "name" : "test",
-        "type" : "package",
         "clear_build_path" : false,
-        "visibility" : "public"
+        "proxy" : "../../config/local.json"
       }
     },
     {
@@ -21,7 +18,7 @@
         "schedule"
       ],
       "build" : "proxy",
-      "build_in" : "./",
+      "build_in" : "schedule",
       "config" : {
         "clear_build_path" : false,
         "proxy" : "../../config/schedule.json"
