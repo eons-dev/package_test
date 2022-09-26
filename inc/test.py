@@ -1,7 +1,7 @@
 import logging
 from eons import UserFunctor
 
-class eonstestpackage(UserFunctor):
+class test(UserFunctor):
     def __init__(this, name="Test Package"):
         super().__init__(name)
     
