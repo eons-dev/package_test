@@ -1,5 +1,5 @@
 {
-  "name" : "test",
+  "name" : "eonstestpackage",
   "type" : "package",
   "clear_build_path" : true,
   "build_in" : "tmp",
