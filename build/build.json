@@ -5,17 +5,6 @@
   "build_in" : "tmp",
   "next": [
     {
-      "run_when_none" : [
-        "github"
-      ],
-      "build" : "proxy",
-      "build_in" : "local",
-      "config" : {
-        "clear_build_path" : false,
-        "proxy" : "../config/local.json"
-      }
-    },
-    {
       "run_when_any" : [
         "github"
       ],

@@ -1,10 +1,10 @@
 import logging
-from eons import UserFunctor
+import eons
 
-class eonstestpackage(UserFunctor):
+class eonstestpackage(eons.Functor):
     def __init__(this, name="Test Package"):
         super().__init__(name)
     
-    def UserFunction(this, **kwargs):
+    def Function(this):
         logging.info("Test functor successfully executed")
         this.functionSucceeded = True
